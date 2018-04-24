@@ -4,7 +4,7 @@ namespace Maalls\LocationBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Maalls\LocationBundle\DependencyInjection\MaallsLocationExtension;
-class IpLocationBundle extends Bundle
+class LocationBundle extends Bundle
 {
 
     public function getContainerExtension()

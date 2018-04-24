@@ -5,6 +5,6 @@ services:
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
         public: false  
 
-    Maalls\SocialMediaContentBundle\:
+    Maalls\LocationBundle\:
         resource: '../../*'
         exclude: '../../{Entity,Migrations,Tests}'

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * IpLocation
  *
  * @ORM\Table(name="ip_location", uniqueConstraints={@ORM\UniqueConstraint(name="ip", columns={"ip"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Maalls\LocationBundle\Repository\IpLocationRepository")
  */
 class IpLocation
 {

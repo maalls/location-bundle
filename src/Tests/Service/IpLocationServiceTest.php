@@ -12,12 +12,17 @@ class IpLocationServiceTest extends TestCase
     public function testGetLocation()
     {
 
+        $this->truncateAll();
         $api = new IpApi();
-        $repository = $this->em->getRepository(IpLocation::class);
+        
+        $service = new IpLocationService($api, $this->em);
 
-        $service = new IpLocationService($api, $repository);
+        $ip = "153.156.41.1";
+        $location = $service->getLocation($ip);
 
-        $location = $service->getLocation("153.156.41.1");
+        $this->assertEquals("Japan", $location->getCountry());
+
+        $location = $this->em->getRepository(IpLocation::class)->findOneBy(["ip" => $ip]);
 
         $this->assertEquals("Japan", $location->getCountry());
         
