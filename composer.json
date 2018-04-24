@@ -1,0 +1,25 @@
+{
+    "name" : "maalls/location-bundle",
+    "description" : "Helps detecting user location.",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "maalls",
+        "email" : "maalls@gmail.com"
+    }],
+    "license" : [
+        "MIT"
+    ],
+
+    "require": {
+
+    },
+    
+    "autoload": {
+        "psr-4": { 
+            "Maalls\\LocationBundle\\": "src/"
+        }
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^4.0"
+    }
+}
