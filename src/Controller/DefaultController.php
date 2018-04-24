@@ -1,6 +1,6 @@
 <?php
 
-namespace Usn\IpLocationBundle\Controller;
+namespace Maalls\LocationBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 

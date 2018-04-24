@@ -1,6 +1,6 @@
 <?php
 
-namespace Usn\IpLocationBundle\Entity;
+namespace Maalls\LocationBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

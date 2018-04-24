@@ -1,6 +1,6 @@
 <?php
 
-namespace Usn\IpLocationBundle\Lib;
+namespace Maalls\LocationBundle\Lib;
 
 class IpApi {
 
